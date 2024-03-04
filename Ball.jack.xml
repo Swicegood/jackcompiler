@@ -1,0 +1,2040 @@
+<class>
+<keyword> class </keyword>
+<identifier> Ball </identifier>
+Ball class
+<symbol> { </symbol>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> x </identifier>
+x int field 0 define
+<symbol> , </symbol>
+<identifier> y </identifier>
+y int field 1 define
+<symbol> ; </symbol>
+</classVarDec>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> lengthx </identifier>
+lengthx int field 2 define
+<symbol> , </symbol>
+<identifier> lengthy </identifier>
+lengthy int field 3 define
+<symbol> ; </symbol>
+</classVarDec>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> d </identifier>
+d int field 4 define
+<symbol> , </symbol>
+<identifier> straightD </identifier>
+straightD int field 5 define
+<symbol> , </symbol>
+<identifier> diagonalD </identifier>
+diagonalD int field 6 define
+<symbol> ; </symbol>
+</classVarDec>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> boolean </keyword>
+<identifier> invert </identifier>
+invert boolean field 7 define
+<symbol> , </symbol>
+<identifier> positivex </identifier>
+positivex boolean field 8 define
+<symbol> , </symbol>
+<identifier> positivey </identifier>
+positivey boolean field 9 define
+<symbol> ; </symbol>
+</classVarDec>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> leftWall </identifier>
+leftWall int field 10 define
+<symbol> , </symbol>
+<identifier> rightWall </identifier>
+rightWall int field 11 define
+<symbol> , </symbol>
+<identifier> topWall </identifier>
+topWall int field 12 define
+<symbol> , </symbol>
+<identifier> bottomWall </identifier>
+bottomWall int field 13 define
+<symbol> ; </symbol>
+</classVarDec>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> wall </identifier>
+wall int field 14 define
+<symbol> ; </symbol>
+</classVarDec>
+<subroutineDec>
+<keyword> constructor </keyword>
+<identifier> Ball </identifier>
+<identifier> new </identifier>
+new subroutine
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> Ax </identifier>
+Ax int argument 0 define
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> Ay </identifier>
+Ay int argument 1 define
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> AleftWall </identifier>
+AleftWall int argument 2 define
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> ArightWall </identifier>
+ArightWall int argument 3 define
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> AtopWall </identifier>
+AtopWall int argument 4 define
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> AbottomWall </identifier>
+AbottomWall int argument 5 define
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Ax </identifier>
+Ax int argument 0 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y </identifier>
+y int field 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Ay </identifier>
+Ay int argument 1 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> leftWall </identifier>
+leftWall int field 10 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> AleftWall </identifier>
+AleftWall int argument 2 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> rightWall </identifier>
+rightWall int field 11 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> ArightWall </identifier>
+ArightWall int argument 3 used
+</term>
+<symbol> - </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> topWall </identifier>
+topWall int field 12 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> AtopWall </identifier>
+AtopWall int argument 4 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> bottomWall </identifier>
+bottomWall int field 13 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> AbottomWall </identifier>
+AbottomWall int argument 5 used
+</term>
+<symbol> - </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> wall </identifier>
+wall int field 14 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> show </identifier>
+show subroutine
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Ball argument 0 define
+<keyword> void </keyword>
+<identifier> dispose </identifier>
+dispose subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+Memory subroutine
+<symbol> . </symbol>
+<identifier> deAlloc </identifier>
+deAlloc subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Ball argument 0 define
+<keyword> void </keyword>
+<identifier> show </identifier>
+show subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+setColor subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> draw </identifier>
+draw subroutine
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Ball argument 0 define
+<keyword> void </keyword>
+<identifier> hide </identifier>
+hide subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+setColor subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> draw </identifier>
+draw subroutine
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Ball argument 0 define
+<keyword> void </keyword>
+<identifier> draw </identifier>
+draw subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+drawRectangle subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Ball argument 0 define
+<keyword> int </keyword>
+<identifier> getLeft </identifier>
+getLeft subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Ball argument 0 define
+<keyword> int </keyword>
+<identifier> getRight </identifier>
+getRight subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Ball argument 0 define
+<keyword> void </keyword>
+<identifier> setDestination </identifier>
+setDestination subroutine
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> destx </identifier>
+destx int argument 1 define
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> desty </identifier>
+desty int argument 2 define
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<varDec>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier> dx </identifier>
+dx int local 0 define
+<symbol> , </symbol>
+<identifier> dy </identifier>
+dy int local 1 define
+<symbol> , </symbol>
+<identifier> temp </identifier>
+temp int local 2 define
+<symbol> ; </symbol>
+</varDec>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> lengthx </identifier>
+lengthx int field 2 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> destx </identifier>
+destx int argument 1 used
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> lengthy </identifier>
+lengthy int field 3 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> desty </identifier>
+desty int argument 2 used
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> dx </identifier>
+dx int local 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+Math class
+<symbol> . </symbol>
+<identifier> abs </identifier>
+abs subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> lengthx </identifier>
+lengthx int field 2 used
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> dy </identifier>
+dy int local 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+Math class
+<symbol> . </symbol>
+<identifier> abs </identifier>
+abs subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> lengthy </identifier>
+lengthy int field 3 used
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> invert </identifier>
+invert boolean field 7 used
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+dx int local 0 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+<identifier> dy </identifier>
+dy int local 1 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> invert </identifier>
+invert boolean field 7 used
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> temp </identifier>
+temp int local 2 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+dx int local 0 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> dx </identifier>
+dx int local 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+dy int local 1 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> dy </identifier>
+dy int local 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> temp </identifier>
+temp int local 2 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> positivex </identifier>
+positivex boolean field 8 used
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+<identifier> desty </identifier>
+desty int argument 2 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> positivey </identifier>
+positivey boolean field 9 used
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+<identifier> destx </identifier>
+destx int argument 1 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> positivex </identifier>
+positivex boolean field 8 used
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+<identifier> destx </identifier>
+destx int argument 1 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> positivey </identifier>
+positivey boolean field 9 used
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+<identifier> desty </identifier>
+desty int argument 2 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> d </identifier>
+d int field 4 used
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+</term>
+<symbol> * </symbol>
+<term>
+<identifier> dy </identifier>
+dy int local 1 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> dx </identifier>
+dx int local 0 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> straightD </identifier>
+straightD int field 5 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+<symbol> * </symbol>
+<term>
+<identifier> dy </identifier>
+dy int local 1 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> diagonalD </identifier>
+diagonalD int field 6 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+<symbol> * </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+dy int local 1 used
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> dx </identifier>
+dx int local 0 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Ball argument 0 define
+<keyword> int </keyword>
+<identifier> move </identifier>
+move subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> hide </identifier>
+hide subroutine
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> d </identifier>
+d int field 4 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> d </identifier>
+d int field 4 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> d </identifier>
+d int field 4 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> straightD </identifier>
+straightD int field 5 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> d </identifier>
+d int field 4 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> d </identifier>
+d int field 4 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> diagonalD </identifier>
+diagonalD int field 6 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> positivey </identifier>
+positivey boolean field 9 used
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> invert </identifier>
+invert boolean field 7 used
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y </identifier>
+y int field 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> invert </identifier>
+invert boolean field 7 used
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> - </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y </identifier>
+y int field 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> - </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> positivex </identifier>
+positivex boolean field 8 used
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> invert </identifier>
+invert boolean field 7 used
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y </identifier>
+y int field 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> invert </identifier>
+invert boolean field 7 used
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y </identifier>
+y int field 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> - </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> - </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> leftWall </identifier>
+leftWall int field 10 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> wall </identifier>
+wall int field 14 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> leftWall </identifier>
+leftWall int field 10 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+<identifier> rightWall </identifier>
+rightWall int field 11 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> wall </identifier>
+wall int field 14 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> rightWall </identifier>
+rightWall int field 11 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> topWall </identifier>
+topWall int field 12 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> wall </identifier>
+wall int field 14 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y </identifier>
+y int field 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> topWall </identifier>
+topWall int field 12 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+<identifier> bottomWall </identifier>
+bottomWall int field 13 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> wall </identifier>
+wall int field 14 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y </identifier>
+y int field 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> bottomWall </identifier>
+bottomWall int field 13 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> show </identifier>
+show subroutine
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<identifier> wall </identifier>
+wall int field 14 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Ball argument 0 define
+<keyword> void </keyword>
+<identifier> bounce </identifier>
+bounce subroutine
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> bouncingDirection </identifier>
+bouncingDirection int argument 1 define
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<varDec>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier> newx </identifier>
+newx int local 0 define
+<symbol> , </symbol>
+<identifier> newy </identifier>
+newy int local 1 define
+<symbol> , </symbol>
+<identifier> divLengthx </identifier>
+divLengthx int local 2 define
+<symbol> , </symbol>
+<identifier> divLengthy </identifier>
+divLengthy int local 3 define
+<symbol> , </symbol>
+<identifier> factor </identifier>
+factor int local 4 define
+<symbol> ; </symbol>
+</varDec>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> divLengthx </identifier>
+divLengthx int local 2 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> lengthx </identifier>
+lengthx int field 2 used
+</term>
+<symbol> / </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> divLengthy </identifier>
+divLengthy int local 3 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> lengthy </identifier>
+lengthy int field 3 used
+</term>
+<symbol> / </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> bouncingDirection </identifier>
+bouncingDirection int argument 1 used
+</term>
+<symbol> = </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> factor </identifier>
+factor int local 4 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> lengthx </identifier>
+lengthx int field 2 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> bouncingDirection </identifier>
+bouncingDirection int argument 1 used
+</term>
+<symbol> = </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> | </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> lengthx </identifier>
+lengthx int field 2 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> bouncingDirection </identifier>
+bouncingDirection int argument 1 used
+</term>
+<symbol> = </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> - </symbol>
+<term>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> factor </identifier>
+factor int local 4 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> factor </identifier>
+factor int local 4 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> wall </identifier>
+wall int field 14 used
+</term>
+<symbol> = </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newx </identifier>
+newx int local 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newy </identifier>
+newy int local 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> divLengthy </identifier>
+divLengthy int local 3 used
+</term>
+<symbol> * </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> - </symbol>
+<term>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> / </symbol>
+<term>
+<identifier> divLengthx </identifier>
+divLengthx int local 2 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newy </identifier>
+newy int local 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> + </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> newy </identifier>
+newy int local 1 used
+</term>
+<symbol> * </symbol>
+<term>
+<identifier> factor </identifier>
+factor int local 4 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> wall </identifier>
+wall int field 14 used
+</term>
+<symbol> = </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newx </identifier>
+newx int local 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newy </identifier>
+newy int local 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> divLengthy </identifier>
+divLengthy int local 3 used
+</term>
+<symbol> * </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> / </symbol>
+<term>
+<identifier> divLengthx </identifier>
+divLengthx int local 2 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newy </identifier>
+newy int local 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> + </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> newy </identifier>
+newy int local 1 used
+</term>
+<symbol> * </symbol>
+<term>
+<identifier> factor </identifier>
+factor int local 4 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> wall </identifier>
+wall int field 14 used
+</term>
+<symbol> = </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newy </identifier>
+newy int local 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newx </identifier>
+newx int local 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> divLengthx </identifier>
+divLengthx int local 2 used
+</term>
+<symbol> * </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> - </symbol>
+<term>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> / </symbol>
+<term>
+<identifier> divLengthy </identifier>
+divLengthy int local 3 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newx </identifier>
+newx int local 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> newx </identifier>
+newx int local 0 used
+</term>
+<symbol> * </symbol>
+<term>
+<identifier> factor </identifier>
+factor int local 4 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newy </identifier>
+newy int local 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newx </identifier>
+newx int local 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> divLengthx </identifier>
+divLengthx int local 2 used
+</term>
+<symbol> * </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> / </symbol>
+<term>
+<identifier> divLengthy </identifier>
+divLengthy int local 3 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> newx </identifier>
+newx int local 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> newx </identifier>
+newx int local 0 used
+</term>
+<symbol> * </symbol>
+<term>
+<identifier> factor </identifier>
+factor int local 4 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> setDestination </identifier>
+setDestination subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> newx </identifier>
+newx int local 0 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> newy </identifier>
+newy int local 1 used
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>

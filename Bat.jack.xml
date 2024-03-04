@@ -1,0 +1,958 @@
+<class>
+<keyword> class </keyword>
+<identifier> Bat </identifier>
+Bat class
+<symbol> { </symbol>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> x </identifier>
+x int field 0 define
+<symbol> , </symbol>
+<identifier> y </identifier>
+y int field 1 define
+<symbol> ; </symbol>
+</classVarDec>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> width </identifier>
+width int field 2 define
+<symbol> , </symbol>
+<identifier> height </identifier>
+height int field 3 define
+<symbol> ; </symbol>
+</classVarDec>
+<classVarDec>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> direction </identifier>
+direction int field 4 define
+<symbol> ; </symbol>
+</classVarDec>
+<subroutineDec>
+<keyword> constructor </keyword>
+<identifier> Bat </identifier>
+<identifier> new </identifier>
+new subroutine
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> Ax </identifier>
+Ax int argument 0 define
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> Ay </identifier>
+Ay int argument 1 define
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> Awidth </identifier>
+Awidth int argument 2 define
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> Aheight </identifier>
+Aheight int argument 3 define
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Ax </identifier>
+Ax int argument 0 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y </identifier>
+y int field 1 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Ay </identifier>
+Ay int argument 1 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> width </identifier>
+width int field 2 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Awidth </identifier>
+Awidth int argument 2 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> height </identifier>
+height int field 3 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Aheight </identifier>
+Aheight int argument 3 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> direction </identifier>
+direction int field 4 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> show </identifier>
+show subroutine
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Bat argument 0 define
+<keyword> void </keyword>
+<identifier> dispose </identifier>
+dispose subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+Memory subroutine
+<symbol> . </symbol>
+<identifier> deAlloc </identifier>
+deAlloc subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Bat argument 0 define
+<keyword> void </keyword>
+<identifier> show </identifier>
+show subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+setColor subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> draw </identifier>
+draw subroutine
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Bat argument 0 define
+<keyword> void </keyword>
+<identifier> hide </identifier>
+hide subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+setColor subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> draw </identifier>
+draw subroutine
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Bat argument 0 define
+<keyword> void </keyword>
+<identifier> draw </identifier>
+draw subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+drawRectangle subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> width </identifier>
+width int field 2 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> height </identifier>
+height int field 3 used
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Bat argument 0 define
+<keyword> void </keyword>
+<identifier> setDirection </identifier>
+setDirection subroutine
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> Adirection </identifier>
+Adirection int argument 1 define
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> direction </identifier>
+direction int field 4 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Adirection </identifier>
+Adirection int argument 1 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Bat argument 0 define
+<keyword> int </keyword>
+<identifier> getLeft </identifier>
+getLeft subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Bat argument 0 define
+<keyword> int </keyword>
+<identifier> getRight </identifier>
+getRight subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> width </identifier>
+width int field 2 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Bat argument 0 define
+<keyword> void </keyword>
+<identifier> setWidth </identifier>
+setWidth subroutine
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> Awidth </identifier>
+Awidth int argument 1 define
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> hide </identifier>
+hide subroutine
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> width </identifier>
+width int field 2 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Awidth </identifier>
+Awidth int argument 1 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> show </identifier>
+show subroutine
+<symbol> ( </symbol>
+<expressionList>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+this Bat argument 0 define
+<keyword> void </keyword>
+<identifier> move </identifier>
+move subroutine
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> direction </identifier>
+direction int field 4 used
+</term>
+<symbol> = </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> - </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> &lt; </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+setColor subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+drawRectangle subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> width </identifier>
+width int field 2 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> width </identifier>
+width int field 2 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> height </identifier>
+height int field 3 used
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+setColor subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+drawRectangle subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> height </identifier>
+height int field 3 used
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> width </identifier>
+width int field 2 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &gt; </symbol>
+<term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x </identifier>
+x int field 0 used
+<symbol> = </symbol>
+<expression>
+<term>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> width </identifier>
+width int field 2 used
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+setColor subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+drawRectangle subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> - </symbol>
+<term>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> - </symbol>
+<term>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> height </identifier>
+height int field 3 used
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+setColor subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+Screen subroutine
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+drawRectangle subroutine
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> width </identifier>
+width int field 2 used
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> - </symbol>
+<term>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+x int field 0 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> width </identifier>
+width int field 2 used
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+y int field 1 used
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> height </identifier>
+height int field 3 used
+</term>
+</expression>
+</expressionList>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>
